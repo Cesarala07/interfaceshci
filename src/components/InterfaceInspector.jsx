@@ -40,10 +40,10 @@ export default function InterfaceInspector({ trials }) {
         <div>
           <h2 className="text-base font-bold text-white flex items-center space-x-2">
             <Eye className="w-5 h-5 text-indigo-400" />
-            <span>Generated Banking Interface & Axe-core Inspector</span>
+            <span>Inspector de Interfaces Bancarias y Axe-core</span>
           </h2>
           <p className="text-xs text-slate-400">
-            Inspect rendered standalone HTML artifacts and automated WCAG 2.2 rule violations
+            Inspecciona los artefactos HTML generados y las violaciones automatizadas de reglas WCAG 2.2
           </p>
         </div>
 
@@ -51,7 +51,7 @@ export default function InterfaceInspector({ trials }) {
         <div className="flex flex-wrap items-center gap-3">
           
           <div className="flex items-center space-x-2">
-            <span className="text-xs font-semibold text-slate-400">Select Trial:</span>
+            <span className="text-xs font-semibold text-slate-400">Seleccionar Prueba:</span>
             <select
               value={selectedTrialId}
               onChange={(e) => {
@@ -60,17 +60,17 @@ export default function InterfaceInspector({ trials }) {
               }}
               className="bg-slate-900 border border-slate-700 text-slate-200 rounded-lg px-3 py-1.5 text-xs font-mono font-semibold focus:outline-none focus:border-indigo-500"
             >
-              <optgroup label="C0 Baseline Trials (N=20)">
+              <optgroup label="Pruebas C0 Línea Base (N=20)">
                 {c0Trials.map(t => (
                   <option key={t.id} value={t.id}>
-                    {t.id} — Baseline ({t.violatedRulesCount} VR / {t.violatingNodesCount} VN)
+                    {t.id} — Línea Base ({t.violatedRulesCount} VR / {t.violatingNodesCount} VN)
                   </option>
                 ))}
               </optgroup>
-              <optgroup label="C1 WCAG 2.2 AA Accessible Trials (N=20)">
+              <optgroup label="Pruebas C1 Accesibles WCAG 2.2 AA (N=20)">
                 {c1Trials.map(t => (
                   <option key={t.id} value={t.id}>
-                    {t.id} — Accessible ({t.violatedRulesCount} VR / {t.violatingNodesCount} VN)
+                    {t.id} — Accesible ({t.violatedRulesCount} VR / {t.violatingNodesCount} VN)
                   </option>
                 ))}
               </optgroup>
@@ -83,7 +83,7 @@ export default function InterfaceInspector({ trials }) {
               ? 'bg-rose-500/10 text-rose-400 border-rose-500/30'
               : 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30'
           }`}>
-            {currentTrial.condition === 'C0' ? 'C0 Baseline' : 'C1 WCAG 2.2 AA'}
+            {currentTrial.condition === 'C0' ? 'C0 Línea Base' : 'C1 WCAG 2.2 AA'}
           </span>
 
         </div>
@@ -110,21 +110,21 @@ export default function InterfaceInspector({ trials }) {
             <div className="flex items-center space-x-1 bg-slate-950 p-1 rounded-md border border-slate-800">
               <button
                 onClick={() => setViewportMode('desktop')}
-                title="Desktop View (Full Width)"
+                title="Vista Escritorio (Ancho Completo)"
                 className={`p-1 rounded ${viewportMode === 'desktop' ? 'bg-indigo-600 text-white' : 'text-slate-500 hover:text-slate-300'}`}
               >
                 <Monitor className="w-3.5 h-3.5" />
               </button>
               <button
                 onClick={() => setViewportMode('tablet')}
-                title="Tablet View (768px)"
+                title="Vista Tableta (768px)"
                 className={`p-1 rounded ${viewportMode === 'tablet' ? 'bg-indigo-600 text-white' : 'text-slate-500 hover:text-slate-300'}`}
               >
                 <Tablet className="w-3.5 h-3.5" />
               </button>
               <button
                 onClick={() => setViewportMode('mobile')}
-                title="Mobile View (375px)"
+                title="Vista Móvil (375px)"
                 className={`p-1 rounded ${viewportMode === 'mobile' ? 'bg-indigo-600 text-white' : 'text-slate-500 hover:text-slate-300'}`}
               >
                 <Smartphone className="w-3.5 h-3.5" />
@@ -146,8 +146,8 @@ export default function InterfaceInspector({ trials }) {
 
           {/* Footer note */}
           <div className="px-4 py-2 bg-slate-900/60 border-t border-slate-800 text-[11px] text-slate-400 flex items-center justify-between">
-            <span>Generated Standalone Single-Page Banking Document</span>
-            <span className="font-mono text-slate-500">Self-Contained HTML/CSS/JS</span>
+            <span>Documento Bancario Independiente de Página Única</span>
+            <span className="font-mono text-slate-500">HTML/CSS/JS Autónomo</span>
           </div>
 
         </div>
@@ -158,10 +158,10 @@ export default function InterfaceInspector({ trials }) {
           <div className="flex items-center justify-between border-b border-slate-800/80 pb-3">
             <h3 className="text-sm font-bold text-white flex items-center space-x-2">
               <AlertTriangle className="w-4 h-4 text-amber-400" />
-              <span>axe-core Automated Audit</span>
+              <span>Auditoría Automatizada axe-core</span>
             </h3>
             <span className="text-xs font-mono font-bold px-2 py-0.5 rounded bg-slate-800 text-slate-300">
-              {currentTrial.violatedRulesCount} Rules Violated
+              {currentTrial.violatedRulesCount} Reglas Violadas
             </span>
           </div>
 
@@ -169,9 +169,9 @@ export default function InterfaceInspector({ trials }) {
           {currentTrial.violations.length === 0 ? (
             <div className="p-6 text-center space-y-2 bg-emerald-950/10 rounded-xl border border-emerald-500/20">
               <CheckCircle2 className="w-8 h-8 text-emerald-400 mx-auto" />
-              <p className="text-sm font-bold text-emerald-300">Zero Accessibility Violations Detected!</p>
+              <p className="text-sm font-bold text-emerald-300">¡Cero Infracciones de Accesibilidad Detectadas!</p>
               <p className="text-xs text-slate-400">
-                This interface satisfied all automated WCAG 2.2 Level A/AA axe-core rules.
+                Esta interfaz cumplió con todas las reglas automatizadas de axe-core para WCAG 2.2 Nivel A/AA.
               </p>
             </div>
           ) : (
@@ -201,7 +201,7 @@ export default function InterfaceInspector({ trials }) {
                   <div className="flex items-start justify-between">
                     <div>
                       <span className="text-[10px] uppercase font-bold text-rose-400 tracking-wider">
-                        Rule ID: {currentViolation.id}
+                        ID de Regla: {currentViolation.id}
                       </span>
                       <h4 className="text-sm font-bold text-white mt-0.5">
                         {currentViolation.help}
@@ -212,7 +212,7 @@ export default function InterfaceInspector({ trials }) {
                         ? 'bg-rose-500/20 text-rose-400 border border-rose-500/30' 
                         : 'bg-amber-500/20 text-amber-400 border border-amber-500/30'
                     }`}>
-                      {currentViolation.impact || 'serious'}
+                      {currentViolation.impact === 'critical' ? 'Crítico' : currentViolation.impact === 'serious' ? 'Serio' : currentViolation.impact === 'moderate' ? 'Moderado' : 'Leve'}
                     </span>
                   </div>
 
@@ -227,7 +227,7 @@ export default function InterfaceInspector({ trials }) {
 
                   {/* DOM Selector */}
                   <div className="bg-slate-950 p-2.5 rounded-lg border border-slate-800 space-y-1">
-                    <span className="text-[10px] font-mono text-slate-500 uppercase">Target Element Selector:</span>
+                    <span className="text-[10px] font-mono text-slate-500 uppercase">Selector del Elemento Objetivo:</span>
                     <p className="text-xs font-mono text-indigo-300 break-all">
                       {currentViolation.selector}
                     </p>
@@ -237,7 +237,7 @@ export default function InterfaceInspector({ trials }) {
                   <div className="bg-indigo-950/30 p-3 rounded-lg border border-indigo-500/20 space-y-1.5">
                     <div className="flex items-center space-x-1.5 text-xs font-bold text-indigo-300">
                       <Code className="w-3.5 h-3.5" />
-                      <span>WCAG 2.2 Remediation Guide</span>
+                      <span>Guía de Remediación WCAG 2.2</span>
                     </div>
                     <p className="text-xs text-slate-300">
                       {getRemediationText(currentViolation.id)}
@@ -384,16 +384,16 @@ function getTrialHtml(trialId) {
 function getRemediationText(ruleId) {
   switch (ruleId) {
     case 'color-contrast':
-      return 'Increase text color contrast ratio to at least 4.5:1 against the background (WCAG 2.1 AA 1.4.3). Use dark text (#1e293b) instead of light grey (#aaaaaa).';
+      return 'Aumentar la relación de contraste del color del texto a un mínimo de 4.5:1 respecto al fondo (WCAG 2.1 AA 1.4.3). Utilizar texto oscuro (#1e293b) en lugar de gris claro (#aaaaaa).';
     case 'label':
-      return 'Replace <span> elements with explicit <label for="elementId"> connected via id attribute on input controls (WCAG 2.1 A 3.3.2).';
+      return 'Reemplazar los elementos <span> con etiquetas explícitas <label for="elementId"> conectadas mediante el atributo id al control de formulario (WCAG 2.1 A 3.3.2).';
     case 'html-has-lang':
-      return 'Declare the primary natural language attribute on the root element: <html lang="en"> (WCAG 2.1 A 3.1.1).';
+      return 'Declarar el atributo del idioma natural principal en el elemento raíz: <html lang="es"> (WCAG 2.1 A 3.1.1).';
     case 'button-name':
-      return 'Provide accessible inner text or an aria-label attribute for interactive buttons (WCAG 2.1 A 4.1.2).';
+      return 'Proporcionar texto accesible dentro del botón o mediante un atributo aria-label para botones interactivos (WCAG 2.1 A 4.1.2).';
     case 'target-size':
-      return 'Ensure clickable buttons and controls have minimum dimensions of 24x24 CSS pixels with adequate spacing (WCAG 2.2 AA 2.5.8).';
+      return 'Garantizar que los botones y controles táctiles tengan dimensiones mínimas de 24x24 píxeles CSS con espaciado adecuado (WCAG 2.2 AA 2.5.8).';
     default:
-      return 'Review WCAG 2.2 AA guidelines to ensure proper ARIA attributes, semantic tags, and keyboard operability.';
+      return 'Revisar las directrices de WCAG 2.2 AA para asegurar atributos ARIA adecuados, etiquetas semánticas y total operabilidad por teclado.';
   }
 }

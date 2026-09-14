@@ -12,12 +12,12 @@ import {
 
 export default function Navbar({ activeTab, setActiveTab, trialsCount }) {
   const navItems = [
-    { id: 'overview', label: 'Overview & KPIs', icon: BarChart3 },
-    { id: 'stats', label: 'Statistical Analysis', icon: Layers },
-    { id: 'inspector', label: 'Interface & Axe Inspector', icon: Search },
-    { id: 'matrix', label: 'Rule Frequency Matrix', icon: ShieldCheck },
-    { id: 'sandbox', label: 'Live Sandbox', icon: Zap },
-    { id: 'exporter', label: 'ICITS 2027 Exporter', icon: FileText },
+    { id: 'overview', label: 'Resumen y KPIs', icon: BarChart3 },
+    { id: 'stats', label: 'Análisis Estadístico', icon: Layers },
+    { id: 'inspector', label: 'Inspector de Interfaces y Axe', icon: Search },
+    { id: 'matrix', label: 'Matriz de Reglas', icon: ShieldCheck },
+    { id: 'sandbox', label: 'Banco de Pruebas', icon: Zap },
+    { id: 'exporter', label: 'Exportador ICITS 2027', icon: FileText },
   ];
 
   return (
@@ -33,14 +33,14 @@ export default function Navbar({ activeTab, setActiveTab, trialsCount }) {
             <div>
               <div className="flex items-center space-x-2">
                 <h1 className="font-extrabold text-base tracking-tight text-white">
-                  AI Accessibility Prompting Study
+                  Estudio de Accesibilidad en Prompts de IA
                 </h1>
                 <span className="px-2 py-0.5 text-[10px] font-mono font-semibold rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/30">
                   ICITS 2027
                 </span>
               </div>
               <p className="text-xs text-slate-400">
-                Single-Factor Experiment (WCAG 2.2 Level AA) • N = {trialsCount} Generations
+                Experimento de Factor Único (WCAG 2.2 Nivel AA) • N = {trialsCount} Generaciones
               </p>
             </div>
           </div>
@@ -71,7 +71,7 @@ export default function Navbar({ activeTab, setActiveTab, trialsCount }) {
           <div className="flex items-center space-x-3">
             <div className="hidden lg:flex items-center space-x-2 px-2.5 py-1 rounded-md bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs">
               <CheckCircle2 className="w-3.5 h-3.5" />
-              <span className="font-mono text-[11px]">axe-core v4.8 Audit Passed</span>
+              <span className="font-mono text-[11px]">Auditoría axe-core v4.8 Aprobada</span>
             </div>
           </div>
 

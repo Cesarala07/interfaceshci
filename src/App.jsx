@@ -65,8 +65,8 @@ export default function App() {
       {/* Footer */}
       <footer className="border-t border-slate-800/80 bg-slate-950 py-6 text-center text-xs text-slate-500 font-mono">
         <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
-          <span>AI Accessibility Prompting Study • ICITS 2027 Experimental Framework</span>
-          <span>WCAG 2.2 Level AA • axe-core Automated Audit Engine</span>
+          <span>Estudio de Prompts de Accesibilidad con IA • Marco Experimental ICITS 2027</span>
+          <span>WCAG 2.2 Nivel AA • Motor de Auditoría Automatizada axe-core</span>
         </div>
       </footer>
 
