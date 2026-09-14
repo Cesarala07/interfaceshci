@@ -72,10 +72,10 @@ Accessibility Requirements (Strict WCAG 2.2 Level AA Compliance):
         <div>
           <h2 className="text-base font-bold text-white flex items-center space-x-2">
             <Zap className="w-5 h-5 text-amber-400" />
-            <span>Live Prompt Execution & axe-core Sandbox</span>
+            <span>Ejecución de Prompts en Vivo y Banco de Pruebas axe-core</span>
           </h2>
           <p className="text-xs text-slate-400">
-            Execute baseline or accessibility-aware prompts in real-time and run automated WCAG 2.2 evaluations
+            Ejecuta prompts estándar o con directrices de accesibilidad en tiempo real y corre evaluaciones automatizadas de WCAG 2.2
           </p>
         </div>
 
@@ -91,7 +91,7 @@ Accessibility Requirements (Strict WCAG 2.2 Level AA Compliance):
                 : 'bg-slate-900 text-slate-400 border-slate-800 hover:text-slate-200'
             }`}
           >
-            C0 Baseline Prompt
+            Prompt C0 Línea Base
           </button>
           <button
             onClick={() => {
@@ -104,7 +104,7 @@ Accessibility Requirements (Strict WCAG 2.2 Level AA Compliance):
                 : 'bg-slate-900 text-slate-400 border-slate-800 hover:text-slate-200'
             }`}
           >
-            C1 WCAG 2.2 Prompt
+            Prompt C1 WCAG 2.2
           </button>
         </div>
       </div>
@@ -116,7 +116,7 @@ Accessibility Requirements (Strict WCAG 2.2 Level AA Compliance):
           <div className="flex items-center justify-between">
             <h3 className="text-xs font-bold text-slate-300 uppercase tracking-wider flex items-center space-x-2">
               <Code className="w-4 h-4 text-indigo-400" />
-              <span>Prompt Text Sandbox ({selectedCondition})</span>
+              <span>Banco de Texto del Prompt ({selectedCondition})</span>
             </h3>
             
             <button
@@ -124,7 +124,7 @@ Accessibility Requirements (Strict WCAG 2.2 Level AA Compliance):
               className="flex items-center space-x-1 text-xs text-slate-400 hover:text-white transition"
             >
               {copied ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5" />}
-              <span>{copied ? 'Copied' : 'Copy Prompt'}</span>
+              <span>{copied ? 'Copiado' : 'Copiar Prompt'}</span>
             </button>
           </div>
 
@@ -137,7 +137,7 @@ Accessibility Requirements (Strict WCAG 2.2 Level AA Compliance):
 
           <div className="flex items-center justify-between pt-2">
             <span className="text-xs text-slate-500">
-              Evaluates output via axe-core Headless Audit Engine
+              Evalúa el resultado mediante el motor de auditoría automatizada axe-core
             </span>
 
             <button
@@ -148,12 +148,12 @@ Accessibility Requirements (Strict WCAG 2.2 Level AA Compliance):
               {isRunning ? (
                 <>
                   <RefreshCw className="w-4 h-4 animate-spin" />
-                  <span>Executing LLM & axe-core...</span>
+                  <span>Ejecutando LLM y axe-core...</span>
                 </>
               ) : (
                 <>
                   <Play className="w-4 h-4 fill-white" />
-                  <span>Execute Trial & Audit WCAG 2.2</span>
+                  <span>Ejecutar Prueba y Auditar WCAG 2.2</span>
                 </>
               )}
             </button>
@@ -163,20 +163,20 @@ Accessibility Requirements (Strict WCAG 2.2 Level AA Compliance):
         {/* Right Column: Execution Output (5 cols) */}
         <div className="lg:col-span-5 glass-panel p-5 rounded-xl border border-slate-800 space-y-4">
           <h3 className="text-xs font-bold text-slate-300 uppercase tracking-wider">
-            Live Execution Audit Results
+            Resultados de la Auditoría en Vivo
           </h3>
 
           {!lastResult && !isRunning && (
             <div className="h-[280px] bg-slate-950/60 rounded-xl border border-slate-800 flex flex-col items-center justify-center p-6 text-center text-slate-500 space-y-2">
               <Zap className="w-8 h-8 text-slate-600" />
-              <p className="text-xs">Click "Execute Trial" to generate interface and view live axe-core audit breakdown.</p>
+              <p className="text-xs">Haz clic en "Ejecutar Prueba" para generar la interfaz y ver el desglose de auditoría axe-core en vivo.</p>
             </div>
           )}
 
           {isRunning && (
             <div className="h-[280px] bg-slate-950/60 rounded-xl border border-slate-800 flex flex-col items-center justify-center p-6 text-center space-y-3">
               <div className="w-10 h-10 border-4 border-amber-500 border-t-transparent rounded-full animate-spin" />
-              <p className="text-xs font-mono text-amber-300">Generating Banking HTML & Auditing WCAG 2.2 Rules...</p>
+              <p className="text-xs font-mono text-amber-300">Generando HTML Bancario y Auditando Reglas WCAG 2.2...</p>
             </div>
           )}
 
@@ -185,17 +185,17 @@ Accessibility Requirements (Strict WCAG 2.2 Level AA Compliance):
               
               <div className="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-2">
                 <div className="flex items-center justify-between text-xs">
-                  <span className="font-mono text-slate-400">Trial ID: {lastResult.trialId}</span>
+                  <span className="font-mono text-slate-400">ID de Prueba: {lastResult.trialId}</span>
                   <span className="text-[10px] text-slate-500">{lastResult.timestamp}</span>
                 </div>
                 <div className="flex items-baseline space-x-3 pt-1">
                   <div>
                     <span className="text-2xl font-extrabold text-white">{lastResult.vrCount}</span>
-                    <span className="text-xs text-slate-400 ml-1">Violated Rules</span>
+                    <span className="text-xs text-slate-400 ml-1">Reglas Violadas</span>
                   </div>
                   <div>
                     <span className="text-2xl font-extrabold text-slate-300">{lastResult.vnCount}</span>
-                    <span className="text-xs text-slate-400 ml-1">Violating Nodes</span>
+                    <span className="text-xs text-slate-400 ml-1">Nodos Violados</span>
                   </div>
                 </div>
               </div>
@@ -204,20 +204,20 @@ Accessibility Requirements (Strict WCAG 2.2 Level AA Compliance):
                 <div className="p-4 rounded-xl bg-emerald-950/20 border border-emerald-500/30 text-emerald-300 space-y-1">
                   <div className="flex items-center space-x-2 font-bold text-xs">
                     <CheckCircle2 className="w-4 h-4" />
-                    <span>Passes All WCAG 2.2 AA Automated Tests</span>
+                    <span>Supera Todas las Pruebas Automatizadas WCAG 2.2 AA</span>
                   </div>
                   <p className="text-[11px] text-slate-300">
-                    No automatically detectable violations found by axe-core.
+                    No se encontraron infracciones detectables automáticamente por axe-core.
                   </p>
                 </div>
               ) : (
                 <div className="space-y-2">
-                  <span className="text-xs font-bold text-rose-400">Detected Violations:</span>
+                  <span className="text-xs font-bold text-rose-400">Infracciones Detectadas:</span>
                   {lastResult.violations.map((v, i) => (
                     <div key={i} className="p-3 bg-rose-950/20 border border-rose-500/30 rounded-lg text-xs space-y-1">
                       <div className="flex justify-between font-bold text-rose-300">
                         <span>{v.id}</span>
-                        <span className="text-[10px] uppercase text-rose-400">{v.impact}</span>
+                        <span className="text-[10px] uppercase text-rose-400">{v.impact === 'critical' ? 'Crítico' : v.impact === 'serious' ? 'Serio' : v.impact}</span>
                       </div>
                       <p className="text-[11px] text-slate-300">{v.help}</p>
                     </div>

@@ -14,16 +14,16 @@ export default function RuleFrequencyMatrix({ stats }) {
         <div>
           <h2 className="text-base font-bold text-white flex items-center space-x-2">
             <ShieldCheck className="w-5 h-5 text-indigo-400" />
-            <span>WCAG 2.2 Rule Frequency & Impact Matrix (RQ2 Analysis)</span>
+            <span>Matriz de Frecuencia e Impacto de Reglas WCAG 2.2 (Análisis RQ2)</span>
           </h2>
           <p className="text-xs text-slate-400">
-            Comparative analysis of specific axe-core rule violations triggered in Condition C0 (Baseline) vs. C1 (Accessible)
+            Análisis comparativo de reglas axe-core específicas violadas en la Condición C0 (Línea Base) vs. C1 (Accesible)
           </p>
         </div>
 
         <div className="flex items-center space-x-2 text-xs font-mono bg-slate-900 px-3 py-1.5 rounded-lg border border-slate-800 shrink-0">
-          <span className="text-slate-400">Total Unique Rules:</span>
-          <span className="text-indigo-400 font-bold">{rules.length} Rules</span>
+          <span className="text-slate-400">Reglas Únicas Totales:</span>
+          <span className="text-indigo-400 font-bold">{rules.length} Reglas</span>
         </div>
       </div>
 
@@ -33,13 +33,13 @@ export default function RuleFrequencyMatrix({ stats }) {
           <table className="w-full text-left text-xs">
             <thead className="bg-slate-900/90 text-slate-400 uppercase tracking-wider font-mono border-b border-slate-800">
               <tr>
-                <th className="p-3.5">axe-core Rule ID</th>
-                <th className="p-3.5">WCAG 2.2 Success Criterion</th>
-                <th className="p-3.5">Severity</th>
-                <th className="p-3.5 text-center">C0 Baseline (N=20)</th>
-                <th className="p-3.5 text-center">C1 Accessible (N=20)</th>
-                <th className="p-3.5 text-center">DOM Nodes (C0 vs C1)</th>
-                <th className="p-3.5 text-center">% Reduction</th>
+                <th className="p-3.5">ID Regla axe-core</th>
+                <th className="p-3.5">Criterio de Conformidad WCAG 2.2</th>
+                <th className="p-3.5">Severidad</th>
+                <th className="p-3.5 text-center">C0 Línea Base (N=20)</th>
+                <th className="p-3.5 text-center">C1 Accesible (N=20)</th>
+                <th className="p-3.5 text-center">Nodos DOM (C0 vs C1)</th>
+                <th className="p-3.5 text-center">% Reducción</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-800/70 text-slate-200">
@@ -77,20 +77,20 @@ export default function RuleFrequencyMatrix({ stats }) {
                           ? 'bg-rose-500/10 text-rose-400 border border-rose-500/30'
                           : 'bg-amber-500/10 text-amber-400 border border-amber-500/30'
                       }`}>
-                        {rule.impact || 'serious'}
+                        {rule.impact === 'critical' ? 'Crítico' : rule.impact === 'serious' ? 'Serio' : rule.impact === 'moderate' ? 'Moderado' : 'Leve'}
                       </span>
                     </td>
 
                     {/* C0 Count */}
                     <td className="p-3.5 text-center font-mono">
                       <div className="font-bold text-rose-400">{rule.c0_count} / 20</div>
-                      <div className="text-[10px] text-slate-500">{c0Pct}% of trials</div>
+                      <div className="text-[10px] text-slate-500">{c0Pct}% de pruebas</div>
                     </td>
 
                     {/* C1 Count */}
                     <td className="p-3.5 text-center font-mono">
                       <div className="font-bold text-emerald-400">{rule.c1_count} / 20</div>
-                      <div className="text-[10px] text-slate-500">{c1Pct}% of trials</div>
+                      <div className="text-[10px] text-slate-500">{c1Pct}% de pruebas</div>
                     </td>
 
                     {/* DOM Nodes */}
@@ -121,17 +121,17 @@ export default function RuleFrequencyMatrix({ stats }) {
       {/* Summary insights box */}
       <div className="glass-panel p-5 rounded-xl border border-indigo-500/20 bg-indigo-950/20 space-y-2">
         <h4 className="text-xs font-bold text-indigo-300 uppercase tracking-wider">
-          RQ2 Key Insights (Rule Frequency Impact):
+          Hallazgos Clave de RQ2 (Impacto en Frecuencia de Reglas):
         </h4>
         <ul className="text-xs text-slate-300 space-y-1.5 list-disc list-inside">
           <li>
-            <strong>Form Controls (<code className="text-indigo-300">label</code>):</strong> Solved completely in C1 (100% elimination of missing explicit labels).
+            <strong>Controles de Formulario (<code className="text-indigo-300">label</code>):</strong> Solucionado al 100% en C1 (eliminación total de etiquetas explícitas ausentes).
           </li>
           <li>
-            <strong>Color Contrast (<code className="text-indigo-300">color-contrast</code>):</strong> Completely resolved in C1 by specifying strict contrast ratios (\(\ge 4.5:1\)).
+            <strong>Contraste de Color (<code className="text-indigo-300">color-contrast</code>):</strong> Completamente resuelto en C1 al especificar ratios estrictos de contraste (\(\ge 4.5:1\)).
           </li>
           <li>
-            <strong>Interactive Elements (<code className="text-indigo-300">button-name</code> & <code className="text-indigo-300">target-size</code>):</strong> Dramatically reduced with explicit touch target and accessible button text instructions.
+            <strong>Elementos Interactivos (<code className="text-indigo-300">button-name</code> y <code className="text-indigo-300">target-size</code>):</strong> Drásticamente reducidos gracias a instrucciones explícitas sobre tamaño táctil y texto accesible en botones.
           </li>
         </ul>
       </div>

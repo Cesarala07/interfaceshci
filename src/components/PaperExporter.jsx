@@ -23,25 +23,25 @@ Violating Nodes (VN)$^\\ddagger$ & ${vn.c0.median} [${vn.c0.iqr}] & ${vn.c1.medi
 \\\\ \\raggedright \\small{$^{\\dagger}$Primary Outcome: Number of distinct axe-core WCAG rules violated per interface. $^{\\ddagger}$Secondary Outcome: Total DOM nodes affected. $^{***}p < 0.001$.}
 \\end{table*}`;
 
-  const markdownSummary = `## Experimental Results Summary (ICITS 2027 Submission)
+  const markdownSummary = `## Resumen de Resultados Experimentales (Envío ICITS 2027)
 
-### Primary Outcome: Violated Rules (VR)
-* **Condition C0 (Baseline)**: Median VR = ${vr.c0.median} (IQR = ${vr.c0.iqr})
-* **Condition C1 (WCAG 2.2 AA Prompt)**: Median VR = ${vr.c1.median} (IQR = ${vr.c1.iqr})
-* **Relative Reduction**: -${vr.reductionPct}%
-* **Mann–Whitney U Test**: U = ${vr.mwu.u}, z = ${vr.mwu.z.toFixed(3)}, p < 0.0001 (Statistically Significant)
-* **Effect Size**: Cliff's delta d = ${vr.cliffsDelta.delta.toFixed(3)} (${vr.cliffsDelta.magnitude} Effect)
+### Resultado Primario: Reglas Violadas (VR)
+* **Condición C0 (Línea Base)**: Mediana VR = ${vr.c0.median} (IQR = ${vr.c0.iqr})
+* **Condición C1 (Prompt WCAG 2.2 AA)**: Mediana VR = ${vr.c1.median} (IQR = ${vr.c1.iqr})
+* **Reducción Relativa**: -${vr.reductionPct}%
+* **Prueba de Mann–Whitney U**: U = ${vr.mwu.u}, z = ${vr.mwu.z.toFixed(3)}, p < 0.0001 (Estadísticamente Significativo)
+* **Tamaño del Efecto**: Delta de Cliff d = ${vr.cliffsDelta.delta.toFixed(3)} (Efecto ${vr.cliffsDelta.magnitude === 'Large' ? 'Grande' : vr.cliffsDelta.magnitude})
 
-### Secondary Outcome: Violating Nodes (VN)
-* **Condition C0 (Baseline)**: Median VN = ${vn.c0.median} (IQR = ${vn.c0.iqr})
-* **Condition C1 (WCAG 2.2 AA Prompt)**: Median VN = ${vn.c1.median} (IQR = ${vn.c1.iqr})
-* **Relative Reduction**: -${vn.reductionPct}%
-* **Effect Size**: Cliff's delta d = ${vn.cliffsDelta.delta.toFixed(3)} (${vn.cliffsDelta.magnitude} Effect)
+### Resultado Secundario: Nodos Violados (VN)
+* **Condición C0 (Línea Base)**: Mediana VN = ${vn.c0.median} (IQR = ${vn.c0.iqr})
+* **Condición C1 (Prompt WCAG 2.2 AA)**: Mediana VN = ${vn.c1.median} (IQR = ${vn.c1.iqr})
+* **Reducción Relativa**: -${vn.reductionPct}%
+* **Tamaño del Efecto**: Delta de Cliff d = ${vn.cliffsDelta.delta.toFixed(3)} (Efecto ${vn.cliffsDelta.magnitude === 'Large' ? 'Grande' : vn.cliffsDelta.magnitude})
 
-### Top Affected WCAG 2.2 Success Criteria
-1. **WCAG 3.3.2 Labels or Instructions** (\`label\`): 100% resolved in C1.
-2. **WCAG 1.4.3 Contrast (Minimum)** (\`color-contrast\`): 100% resolved in C1.
-3. **WCAG 4.1.2 Name, Role, Value** (\`button-name\`): 100% resolved in C1.`;
+### Principales Criterios de Éxito WCAG 2.2 Afectados
+1. **WCAG 3.3.2 Etiquetas o Instrucciones** (\`label\`): 100% resuelto en C1.
+2. **WCAG 1.4.3 Contraste Mínimo** (\`color-contrast\`): 100% resuelto en C1.
+3. **WCAG 4.1.2 Nombre, Función, Valor** (\`button-name\`): 100% resuelto en C1.`;
 
   const copyToClipboard = (text, type) => {
     navigator.clipboard.writeText(text);
@@ -72,10 +72,10 @@ Violating Nodes (VN)$^\\ddagger$ & ${vn.c0.median} [${vn.c0.iqr}] & ${vn.c1.medi
         <div>
           <h2 className="text-base font-bold text-white flex items-center space-x-2">
             <BookOpen className="w-5 h-5 text-indigo-400" />
-            <span>ICITS 2027 Academic Paper Artifact Exporter</span>
+            <span>Exportador de Artefactos para Artículo Académico (ICITS 2027)</span>
           </h2>
           <p className="text-xs text-slate-400">
-            Generate camera-ready LaTeX tables, Markdown methodology text, and raw JSON benchmark data
+            Genera tablas listas para publicación en LaTeX, texto metodológico en Markdown y el dataset en bruto en formato JSON
           </p>
         </div>
 
@@ -84,7 +84,7 @@ Violating Nodes (VN)$^\\ddagger$ & ${vn.c0.median} [${vn.c0.iqr}] & ${vn.c1.medi
           className="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs shadow-lg shadow-indigo-600/25 transition-all flex items-center space-x-2 shrink-0"
         >
           <Download className="w-4 h-4" />
-          <span>Download Dataset (JSON)</span>
+          <span>Descargar Dataset (JSON)</span>
         </button>
       </div>
 
@@ -95,7 +95,7 @@ Violating Nodes (VN)$^\\ddagger$ & ${vn.c0.median} [${vn.c0.iqr}] & ${vn.c1.medi
           <div className="flex items-center justify-between">
             <h3 className="text-xs font-bold text-slate-300 uppercase tracking-wider flex items-center space-x-2">
               <FileCode className="w-4 h-4 text-indigo-400" />
-              <span>Camera-Ready LaTeX Table Code</span>
+              <span>Código de Tabla para LaTeX (Cámara-Ready)</span>
             </h3>
 
             <button
@@ -103,7 +103,7 @@ Violating Nodes (VN)$^\\ddagger$ & ${vn.c0.median} [${vn.c0.iqr}] & ${vn.c1.medi
               className="flex items-center space-x-1 text-xs text-slate-400 hover:text-white transition"
             >
               {copiedLatex ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5" />}
-              <span>{copiedLatex ? 'Copied LaTeX' : 'Copy LaTeX'}</span>
+              <span>{copiedLatex ? 'LaTeX Copiado' : 'Copiar LaTeX'}</span>
             </button>
           </div>
 
@@ -117,7 +117,7 @@ Violating Nodes (VN)$^\\ddagger$ & ${vn.c0.median} [${vn.c0.iqr}] & ${vn.c1.medi
           <div className="flex items-center justify-between">
             <h3 className="text-xs font-bold text-slate-300 uppercase tracking-wider flex items-center space-x-2">
               <BookOpen className="w-4 h-4 text-purple-400" />
-              <span>Paper Methodology & Results Text</span>
+              <span>Texto de Metodología y Resultados para Artículo</span>
             </h3>
 
             <button
@@ -125,7 +125,7 @@ Violating Nodes (VN)$^\\ddagger$ & ${vn.c0.median} [${vn.c0.iqr}] & ${vn.c1.medi
               className="flex items-center space-x-1 text-xs text-slate-400 hover:text-white transition"
             >
               {copiedMarkdown ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5" />}
-              <span>{copiedMarkdown ? 'Copied Markdown' : 'Copy Markdown'}</span>
+              <span>{copiedMarkdown ? 'Markdown Copiado' : 'Copiar Markdown'}</span>
             </button>
           </div>
 

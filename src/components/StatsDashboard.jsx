@@ -7,7 +7,7 @@ export default function StatsDashboard({ stats, trials }) {
   if (!stats || !trials) return null;
 
   const currentMetric = metricType === 'VR' ? stats.vr : stats.vn;
-  const metricLabel = metricType === 'VR' ? 'Violated Rules (VR)' : 'Violating Nodes (VN)';
+  const metricLabel = metricType === 'VR' ? 'Reglas Violadas (VR)' : 'Nodos Violados (VN)';
 
   const c0Values = trials.filter(t => t.condition === 'C0').map(t => metricType === 'VR' ? t.violatedRulesCount : t.violatingNodesCount);
   const c1Values = trials.filter(t => t.condition === 'C1').map(t => metricType === 'VR' ? t.violatedRulesCount : t.violatingNodesCount);
@@ -33,10 +33,10 @@ export default function StatsDashboard({ stats, trials }) {
         <div>
           <h2 className="text-lg font-bold text-white flex items-center space-x-2">
             <Scale className="w-5 h-5 text-indigo-400" />
-            <span>Statistical Analysis & Hypothesis Testing</span>
+            <span>Análisis Estadístico y Prueba de Hipótesis</span>
           </h2>
           <p className="text-xs text-slate-400">
-            Mann–Whitney U non-parametric test (two-sided) and Cliff's Delta effect size analysis
+            Prueba no paramétrica de Mann–Whitney U (dos colas) y análisis del tamaño del efecto Cliff's Delta
           </p>
         </div>
 
@@ -49,7 +49,7 @@ export default function StatsDashboard({ stats, trials }) {
                 : 'text-slate-400 hover:text-slate-200'
             }`}
           >
-            Violated Rules (VR)
+            Reglas Violadas (VR)
           </button>
           <button
             onClick={() => setMetricType('VN')}
@@ -59,7 +59,7 @@ export default function StatsDashboard({ stats, trials }) {
                 : 'text-slate-400 hover:text-slate-200'
             }`}
           >
-            Violating Nodes (VN)
+            Nodos Violados (VN)
           </button>
         </div>
       </div>
@@ -72,7 +72,7 @@ export default function StatsDashboard({ stats, trials }) {
           <div className="flex items-center justify-between">
             <h3 className="text-sm font-bold text-white flex items-center space-x-2">
               <BarChart2 className="w-4 h-4 text-indigo-400" />
-              <span>Distribution Histogram: {metricLabel}</span>
+              <span>Histograma de Distribución: {metricLabel}</span>
             </h3>
             <span className="text-xs text-slate-400 font-mono">N = 20 vs N = 20</span>
           </div>
@@ -82,8 +82,8 @@ export default function StatsDashboard({ stats, trials }) {
             {/* C0 Bars */}
             <div className="space-y-1">
               <div className="flex items-center justify-between text-xs text-rose-400 font-medium">
-                <span>Condition C0 (Baseline)</span>
-                <span>Median: {currentMetric.c0.median}</span>
+                <span>Condición C0 (Línea Base)</span>
+                <span>Mediana: {currentMetric.c0.median}</span>
               </div>
               <div className="h-24 bg-slate-950/80 rounded-lg p-2 border border-slate-800 flex items-end justify-between gap-1">
                 {bucketsArray.map(bucket => {
@@ -108,8 +108,8 @@ export default function StatsDashboard({ stats, trials }) {
             {/* C1 Bars */}
             <div className="space-y-1">
               <div className="flex items-center justify-between text-xs text-emerald-400 font-medium">
-                <span>Condition C1 (WCAG 2.2 AA Prompt)</span>
-                <span>Median: {currentMetric.c1.median}</span>
+                <span>Condición C1 (Prompt Accesible WCAG 2.2 AA)</span>
+                <span>Mediana: {currentMetric.c1.median}</span>
               </div>
               <div className="h-24 bg-slate-950/80 rounded-lg p-2 border border-slate-800 flex items-end justify-between gap-1">
                 {bucketsArray.map(bucket => {
@@ -132,7 +132,7 @@ export default function StatsDashboard({ stats, trials }) {
             </div>
 
             <div className="text-[11px] text-slate-400 text-center pt-1 border-t border-slate-800/60">
-              Horizontal Axis: Number of {metricLabel} per trial • Vertical Axis: Trial Frequency
+              Eje Horizontal: Cantidad de {metricLabel} por prueba • Eje Vertical: Frecuencia de pruebas
             </div>
 
           </div>
@@ -143,7 +143,7 @@ export default function StatsDashboard({ stats, trials }) {
           <div className="flex items-center justify-between">
             <h3 className="text-sm font-bold text-white flex items-center space-x-2">
               <Layers className="w-4 h-4 text-purple-400" />
-              <span>Median & Interquartile Range (IQR) Boxplots</span>
+              <span>Diagramas de Caja: Mediana y Rango Intercuartil (IQR)</span>
             </h3>
           </div>
 
@@ -152,9 +152,9 @@ export default function StatsDashboard({ stats, trials }) {
             {/* Boxplot C0 */}
             <div className="space-y-2">
               <div className="flex justify-between text-xs">
-                <span className="font-semibold text-rose-400">C0 Baseline</span>
+                <span className="font-semibold text-rose-400">C0 Línea Base</span>
                 <span className="font-mono text-slate-300">
-                  Q1: {currentMetric.c0.q1} | Median: {currentMetric.c0.median} | Q3: {currentMetric.c0.q3} | IQR: {currentMetric.c0.iqr}
+                  Q1: {currentMetric.c0.q1} | Mediana: {currentMetric.c0.median} | Q3: {currentMetric.c0.q3} | IQR: {currentMetric.c0.iqr}
                 </span>
               </div>
               <div className="relative h-12 bg-slate-950 rounded-lg border border-slate-800 flex items-center px-4">
@@ -188,9 +188,9 @@ export default function StatsDashboard({ stats, trials }) {
             {/* Boxplot C1 */}
             <div className="space-y-2">
               <div className="flex justify-between text-xs">
-                <span className="font-semibold text-emerald-400">C1 Accessible</span>
+                <span className="font-semibold text-emerald-400">C1 Accesible</span>
                 <span className="font-mono text-slate-300">
-                  Q1: {currentMetric.c1.q1} | Median: {currentMetric.c1.median} | Q3: {currentMetric.c1.q3} | IQR: {currentMetric.c1.iqr}
+                  Q1: {currentMetric.c1.q1} | Mediana: {currentMetric.c1.median} | Q3: {currentMetric.c1.q3} | IQR: {currentMetric.c1.iqr}
                 </span>
               </div>
               <div className="relative h-12 bg-slate-950 rounded-lg border border-slate-800 flex items-center px-4">
@@ -219,9 +219,9 @@ export default function StatsDashboard({ stats, trials }) {
 
             {/* Summary Callout */}
             <div className="bg-slate-900/80 p-3 rounded-lg border border-slate-800 text-xs text-slate-300 space-y-1">
-              <p className="font-semibold text-white">Statistical Result Interpretation:</p>
+              <p className="font-semibold text-white">Interpretación del Resultado Estadístico:</p>
               <p>
-                The non-overlapping IQRs demonstrate clear separation between baseline and accessibility-prompted conditions without parametric normality assumptions.
+                Los rangos intercuartiles (IQR) sin solapamiento demuestran una separación categórica entre la condición base y la condición con prompt de accesibilidad, sin necesidad de asumir supuestos de normalidad paramétrica.
               </p>
             </div>
 
@@ -233,27 +233,27 @@ export default function StatsDashboard({ stats, trials }) {
       {/* Mann-Whitney U & Cliff's Delta Numerical Table */}
       <div className="glass-panel p-5 rounded-xl border border-slate-800 space-y-4">
         <h3 className="text-sm font-bold text-white">
-          Detailed Inferential Statistics Output (Mann–Whitney U & Cliff's Delta)
+          Resultados Detallados de Estadística Inferencial (Mann–Whitney U y Cliff's Delta)
         </h3>
 
         <div className="overflow-x-auto">
           <table className="w-full text-left text-xs font-mono">
             <thead className="bg-slate-900/90 text-slate-400 uppercase tracking-wider border-b border-slate-800">
               <tr>
-                <th className="p-3">Outcome Metric</th>
-                <th className="p-3 text-center">C0 Baseline (Med [IQR])</th>
-                <th className="p-3 text-center">C1 Accessible (Med [IQR])</th>
-                <th className="p-3 text-center">MWU U-Stat</th>
-                <th className="p-3 text-center">z-Score</th>
-                <th className="p-3 text-center">p-Value (Two-Sided)</th>
+                <th className="p-3">Métrica de Resultado</th>
+                <th className="p-3 text-center">C0 Línea Base (Med [IQR])</th>
+                <th className="p-3 text-center">C1 Accesible (Med [IQR])</th>
+                <th className="p-3 text-center">Estadístico U MWU</th>
+                <th className="p-3 text-center">Puntuación z</th>
+                <th className="p-3 text-center">Valor p (Dos Colas)</th>
                 <th className="p-3 text-center">Cliff's Delta (d)</th>
-                <th className="p-3 text-center">Effect Size</th>
+                <th className="p-3 text-center">Tamaño del Efecto</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-800/60 text-slate-200">
               
               <tr className="hover:bg-slate-900/50 transition">
-                <td className="p-3 font-semibold text-indigo-300">Violated Rules (VR)</td>
+                <td className="p-3 font-semibold text-indigo-300">Reglas Violadas (VR)</td>
                 <td className="p-3 text-center text-rose-400">{stats.vr.c0.median} [{stats.vr.c0.iqr}]</td>
                 <td className="p-3 text-center text-emerald-400">{stats.vr.c1.median} [{stats.vr.c1.iqr}]</td>
                 <td className="p-3 text-center font-bold text-white">{stats.vr.mwu.u}</td>
@@ -264,13 +264,13 @@ export default function StatsDashboard({ stats, trials }) {
                 <td className="p-3 text-center font-bold">{stats.vr.cliffsDelta.delta.toFixed(3)}</td>
                 <td className="p-3 text-center">
                   <span className="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 font-sans text-[10px] font-bold border border-emerald-500/30">
-                    {stats.vr.cliffsDelta.magnitude}
+                    {stats.vr.cliffsDelta.magnitude === 'Large' ? 'Grande' : stats.vr.cliffsDelta.magnitude}
                   </span>
                 </td>
               </tr>
 
               <tr className="hover:bg-slate-900/50 transition">
-                <td className="p-3 font-semibold text-purple-300">Violating Nodes (VN)</td>
+                <td className="p-3 font-semibold text-purple-300">Nodos Violados (VN)</td>
                 <td className="p-3 text-center text-rose-400">{stats.vn.c0.median} [{stats.vn.c0.iqr}]</td>
                 <td className="p-3 text-center text-emerald-400">{stats.vn.c1.median} [{stats.vn.c1.iqr}]</td>
                 <td className="p-3 text-center font-bold text-white">{stats.vn.mwu.u}</td>
@@ -281,7 +281,7 @@ export default function StatsDashboard({ stats, trials }) {
                 <td className="p-3 text-center font-bold">{stats.vn.cliffsDelta.delta.toFixed(3)}</td>
                 <td className="p-3 text-center">
                   <span className="px-2 py-0.5 rounded bg-purple-500/10 text-purple-400 font-sans text-[10px] font-bold border border-purple-500/30">
-                    {stats.vn.cliffsDelta.magnitude}
+                    {stats.vn.cliffsDelta.magnitude === 'Large' ? 'Grande' : stats.vn.cliffsDelta.magnitude}
                   </span>
                 </td>
               </tr>
@@ -291,7 +291,7 @@ export default function StatsDashboard({ stats, trials }) {
         </div>
 
         <p className="text-[11px] text-slate-400">
-          *** Indicates statistical significance at \(\alpha = 0.001\) level. Cliff's Delta interpretation: Large if \(|d| \ge 0.474\), Medium if \(0.33 \le |d| &lt; 0.474\), Small if \(0.147 \le |d| &lt; 0.33\).
+          *** Indica significancia estadística al nivel de \(\alpha = 0.001\). Interpretación de Cliff's Delta: Grande si \(|d| \ge 0.474\), Mediano si \(0.33 \le |d| &lt; 0.474\), Pequeño si \(0.147 \le |d| &lt; 0.33\).
         </p>
 
       </div>
