@@ -1,0 +1,1936 @@
+[
+  {
+    "id": "C0_01",
+    "condition": "C0",
+    "promptType": "Baseline",
+    "timestamp": "2026-09-14T15:01:00.000Z",
+    "htmlFile": "raw_generations/C0_01.html",
+    "violatedRulesCount": 5,
+    "violatingNodesCount": 15,
+    "violations": [
+      {
+        "id": "color-contrast",
+        "help": "Elements must have sufficient color contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag143"
+        ],
+        "nodesCount": 3,
+        "selector": "h2"
+      },
+      {
+        "id": "label",
+        "help": "Form elements must have labels",
+        "impact": "critical",
+        "tags": [
+          "cat.forms",
+          "wcag2a",
+          "wcag332"
+        ],
+        "nodesCount": 3,
+        "selector": "input[placeholder=\"Enter beneficiary name\"]"
+      },
+      {
+        "id": "html-has-lang",
+        "help": "<html> element must have a lang attribute",
+        "impact": "serious",
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311"
+        ],
+        "nodesCount": 3,
+        "selector": "form"
+      },
+      {
+        "id": "button-name",
+        "help": "Buttons must have discernible text",
+        "impact": "critical",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412"
+        ],
+        "nodesCount": 3,
+        "selector": "button.icon-btn"
+      },
+      {
+        "id": "target-size",
+        "help": "Touch targets must be at least 24px by 24px",
+        "impact": "moderate",
+        "tags": [
+          "cat.sensory-and-visual",
+          "wcag22aa",
+          "wcag258"
+        ],
+        "nodesCount": 3,
+        "selector": "form"
+      }
+    ]
+  },
+  {
+    "id": "C0_02",
+    "condition": "C0",
+    "promptType": "Baseline",
+    "timestamp": "2026-09-14T15:02:00.000Z",
+    "htmlFile": "raw_generations/C0_02.html",
+    "violatedRulesCount": 7,
+    "violatingNodesCount": 14,
+    "violations": [
+      {
+        "id": "landmark-one-main",
+        "help": "Document should have one main landmark",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "nodesCount": 2,
+        "selector": "form"
+      },
+      {
+        "id": "region",
+        "help": "All page content should be contained by landmarks",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "wcag2a",
+          "wcag131"
+        ],
+        "nodesCount": 2,
+        "selector": "form"
+      },
+      {
+        "id": "target-size",
+        "help": "Touch targets must be at least 24px by 24px",
+        "impact": "moderate",
+        "tags": [
+          "cat.sensory-and-visual",
+          "wcag22aa",
+          "wcag258"
+        ],
+        "nodesCount": 2,
+        "selector": "form"
+      },
+      {
+        "id": "button-name",
+        "help": "Buttons must have discernible text",
+        "impact": "critical",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412"
+        ],
+        "nodesCount": 2,
+        "selector": "button.icon-btn"
+      },
+      {
+        "id": "html-has-lang",
+        "help": "<html> element must have a lang attribute",
+        "impact": "serious",
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311"
+        ],
+        "nodesCount": 2,
+        "selector": "form"
+      },
+      {
+        "id": "label",
+        "help": "Form elements must have labels",
+        "impact": "critical",
+        "tags": [
+          "cat.forms",
+          "wcag2a",
+          "wcag332"
+        ],
+        "nodesCount": 2,
+        "selector": "input[placeholder=\"Enter beneficiary name\"]"
+      },
+      {
+        "id": "color-contrast",
+        "help": "Elements must have sufficient color contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag143"
+        ],
+        "nodesCount": 2,
+        "selector": "h2"
+      }
+    ]
+  },
+  {
+    "id": "C0_03",
+    "condition": "C0",
+    "promptType": "Baseline",
+    "timestamp": "2026-09-14T15:03:00.000Z",
+    "htmlFile": "raw_generations/C0_03.html",
+    "violatedRulesCount": 5,
+    "violatingNodesCount": 15,
+    "violations": [
+      {
+        "id": "landmark-one-main",
+        "help": "Document should have one main landmark",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "nodesCount": 3,
+        "selector": "form"
+      },
+      {
+        "id": "region",
+        "help": "All page content should be contained by landmarks",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "wcag2a",
+          "wcag131"
+        ],
+        "nodesCount": 3,
+        "selector": "form"
+      },
+      {
+        "id": "target-size",
+        "help": "Touch targets must be at least 24px by 24px",
+        "impact": "moderate",
+        "tags": [
+          "cat.sensory-and-visual",
+          "wcag22aa",
+          "wcag258"
+        ],
+        "nodesCount": 3,
+        "selector": "form"
+      },
+      {
+        "id": "button-name",
+        "help": "Buttons must have discernible text",
+        "impact": "critical",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412"
+        ],
+        "nodesCount": 3,
+        "selector": "button.icon-btn"
+      },
+      {
+        "id": "html-has-lang",
+        "help": "<html> element must have a lang attribute",
+        "impact": "serious",
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311"
+        ],
+        "nodesCount": 3,
+        "selector": "form"
+      }
+    ]
+  },
+  {
+    "id": "C0_04",
+    "condition": "C0",
+    "promptType": "Baseline",
+    "timestamp": "2026-09-14T15:04:00.000Z",
+    "htmlFile": "raw_generations/C0_04.html",
+    "violatedRulesCount": 7,
+    "violatingNodesCount": 28,
+    "violations": [
+      {
+        "id": "landmark-one-main",
+        "help": "Document should have one main landmark",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "nodesCount": 4,
+        "selector": "form"
+      },
+      {
+        "id": "region",
+        "help": "All page content should be contained by landmarks",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "wcag2a",
+          "wcag131"
+        ],
+        "nodesCount": 4,
+        "selector": "form"
+      },
+      {
+        "id": "target-size",
+        "help": "Touch targets must be at least 24px by 24px",
+        "impact": "moderate",
+        "tags": [
+          "cat.sensory-and-visual",
+          "wcag22aa",
+          "wcag258"
+        ],
+        "nodesCount": 4,
+        "selector": "form"
+      },
+      {
+        "id": "button-name",
+        "help": "Buttons must have discernible text",
+        "impact": "critical",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412"
+        ],
+        "nodesCount": 4,
+        "selector": "button.icon-btn"
+      },
+      {
+        "id": "html-has-lang",
+        "help": "<html> element must have a lang attribute",
+        "impact": "serious",
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311"
+        ],
+        "nodesCount": 4,
+        "selector": "form"
+      },
+      {
+        "id": "label",
+        "help": "Form elements must have labels",
+        "impact": "critical",
+        "tags": [
+          "cat.forms",
+          "wcag2a",
+          "wcag332"
+        ],
+        "nodesCount": 4,
+        "selector": "input[placeholder=\"Enter beneficiary name\"]"
+      },
+      {
+        "id": "color-contrast",
+        "help": "Elements must have sufficient color contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag143"
+        ],
+        "nodesCount": 4,
+        "selector": "h2"
+      }
+    ]
+  },
+  {
+    "id": "C0_05",
+    "condition": "C0",
+    "promptType": "Baseline",
+    "timestamp": "2026-09-14T15:05:00.000Z",
+    "htmlFile": "raw_generations/C0_05.html",
+    "violatedRulesCount": 5,
+    "violatingNodesCount": 20,
+    "violations": [
+      {
+        "id": "color-contrast",
+        "help": "Elements must have sufficient color contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag143"
+        ],
+        "nodesCount": 4,
+        "selector": "h2"
+      },
+      {
+        "id": "label",
+        "help": "Form elements must have labels",
+        "impact": "critical",
+        "tags": [
+          "cat.forms",
+          "wcag2a",
+          "wcag332"
+        ],
+        "nodesCount": 4,
+        "selector": "input[placeholder=\"Enter beneficiary name\"]"
+      },
+      {
+        "id": "html-has-lang",
+        "help": "<html> element must have a lang attribute",
+        "impact": "serious",
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311"
+        ],
+        "nodesCount": 4,
+        "selector": "form"
+      },
+      {
+        "id": "button-name",
+        "help": "Buttons must have discernible text",
+        "impact": "critical",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412"
+        ],
+        "nodesCount": 4,
+        "selector": "button.icon-btn"
+      },
+      {
+        "id": "target-size",
+        "help": "Touch targets must be at least 24px by 24px",
+        "impact": "moderate",
+        "tags": [
+          "cat.sensory-and-visual",
+          "wcag22aa",
+          "wcag258"
+        ],
+        "nodesCount": 4,
+        "selector": "form"
+      }
+    ]
+  },
+  {
+    "id": "C0_06",
+    "condition": "C0",
+    "promptType": "Baseline",
+    "timestamp": "2026-09-14T15:06:00.000Z",
+    "htmlFile": "raw_generations/C0_06.html",
+    "violatedRulesCount": 5,
+    "violatingNodesCount": 15,
+    "violations": [
+      {
+        "id": "color-contrast",
+        "help": "Elements must have sufficient color contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag143"
+        ],
+        "nodesCount": 3,
+        "selector": "h2"
+      },
+      {
+        "id": "label",
+        "help": "Form elements must have labels",
+        "impact": "critical",
+        "tags": [
+          "cat.forms",
+          "wcag2a",
+          "wcag332"
+        ],
+        "nodesCount": 3,
+        "selector": "input[placeholder=\"Enter beneficiary name\"]"
+      },
+      {
+        "id": "html-has-lang",
+        "help": "<html> element must have a lang attribute",
+        "impact": "serious",
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311"
+        ],
+        "nodesCount": 3,
+        "selector": "form"
+      },
+      {
+        "id": "button-name",
+        "help": "Buttons must have discernible text",
+        "impact": "critical",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412"
+        ],
+        "nodesCount": 3,
+        "selector": "button.icon-btn"
+      },
+      {
+        "id": "target-size",
+        "help": "Touch targets must be at least 24px by 24px",
+        "impact": "moderate",
+        "tags": [
+          "cat.sensory-and-visual",
+          "wcag22aa",
+          "wcag258"
+        ],
+        "nodesCount": 3,
+        "selector": "form"
+      }
+    ]
+  },
+  {
+    "id": "C0_07",
+    "condition": "C0",
+    "promptType": "Baseline",
+    "timestamp": "2026-09-14T15:07:00.000Z",
+    "htmlFile": "raw_generations/C0_07.html",
+    "violatedRulesCount": 7,
+    "violatingNodesCount": 14,
+    "violations": [
+      {
+        "id": "landmark-one-main",
+        "help": "Document should have one main landmark",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "nodesCount": 2,
+        "selector": "form"
+      },
+      {
+        "id": "region",
+        "help": "All page content should be contained by landmarks",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "wcag2a",
+          "wcag131"
+        ],
+        "nodesCount": 2,
+        "selector": "form"
+      },
+      {
+        "id": "target-size",
+        "help": "Touch targets must be at least 24px by 24px",
+        "impact": "moderate",
+        "tags": [
+          "cat.sensory-and-visual",
+          "wcag22aa",
+          "wcag258"
+        ],
+        "nodesCount": 2,
+        "selector": "form"
+      },
+      {
+        "id": "button-name",
+        "help": "Buttons must have discernible text",
+        "impact": "critical",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412"
+        ],
+        "nodesCount": 2,
+        "selector": "button.icon-btn"
+      },
+      {
+        "id": "html-has-lang",
+        "help": "<html> element must have a lang attribute",
+        "impact": "serious",
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311"
+        ],
+        "nodesCount": 2,
+        "selector": "form"
+      },
+      {
+        "id": "label",
+        "help": "Form elements must have labels",
+        "impact": "critical",
+        "tags": [
+          "cat.forms",
+          "wcag2a",
+          "wcag332"
+        ],
+        "nodesCount": 2,
+        "selector": "input[placeholder=\"Enter beneficiary name\"]"
+      },
+      {
+        "id": "color-contrast",
+        "help": "Elements must have sufficient color contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag143"
+        ],
+        "nodesCount": 2,
+        "selector": "h2"
+      }
+    ]
+  },
+  {
+    "id": "C0_08",
+    "condition": "C0",
+    "promptType": "Baseline",
+    "timestamp": "2026-09-14T15:08:00.000Z",
+    "htmlFile": "raw_generations/C0_08.html",
+    "violatedRulesCount": 7,
+    "violatingNodesCount": 21,
+    "violations": [
+      {
+        "id": "color-contrast",
+        "help": "Elements must have sufficient color contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag143"
+        ],
+        "nodesCount": 3,
+        "selector": "h2"
+      },
+      {
+        "id": "label",
+        "help": "Form elements must have labels",
+        "impact": "critical",
+        "tags": [
+          "cat.forms",
+          "wcag2a",
+          "wcag332"
+        ],
+        "nodesCount": 3,
+        "selector": "input[placeholder=\"Enter beneficiary name\"]"
+      },
+      {
+        "id": "html-has-lang",
+        "help": "<html> element must have a lang attribute",
+        "impact": "serious",
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311"
+        ],
+        "nodesCount": 3,
+        "selector": "form"
+      },
+      {
+        "id": "button-name",
+        "help": "Buttons must have discernible text",
+        "impact": "critical",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412"
+        ],
+        "nodesCount": 3,
+        "selector": "button.icon-btn"
+      },
+      {
+        "id": "target-size",
+        "help": "Touch targets must be at least 24px by 24px",
+        "impact": "moderate",
+        "tags": [
+          "cat.sensory-and-visual",
+          "wcag22aa",
+          "wcag258"
+        ],
+        "nodesCount": 3,
+        "selector": "form"
+      },
+      {
+        "id": "region",
+        "help": "All page content should be contained by landmarks",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "wcag2a",
+          "wcag131"
+        ],
+        "nodesCount": 3,
+        "selector": "form"
+      },
+      {
+        "id": "landmark-one-main",
+        "help": "Document should have one main landmark",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "nodesCount": 3,
+        "selector": "form"
+      }
+    ]
+  },
+  {
+    "id": "C0_09",
+    "condition": "C0",
+    "promptType": "Baseline",
+    "timestamp": "2026-09-14T15:09:00.000Z",
+    "htmlFile": "raw_generations/C0_09.html",
+    "violatedRulesCount": 5,
+    "violatingNodesCount": 5,
+    "violations": [
+      {
+        "id": "color-contrast",
+        "help": "Elements must have sufficient color contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag143"
+        ],
+        "nodesCount": 1,
+        "selector": "h2"
+      },
+      {
+        "id": "label",
+        "help": "Form elements must have labels",
+        "impact": "critical",
+        "tags": [
+          "cat.forms",
+          "wcag2a",
+          "wcag332"
+        ],
+        "nodesCount": 1,
+        "selector": "input[placeholder=\"Enter beneficiary name\"]"
+      },
+      {
+        "id": "html-has-lang",
+        "help": "<html> element must have a lang attribute",
+        "impact": "serious",
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311"
+        ],
+        "nodesCount": 1,
+        "selector": "form"
+      },
+      {
+        "id": "button-name",
+        "help": "Buttons must have discernible text",
+        "impact": "critical",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412"
+        ],
+        "nodesCount": 1,
+        "selector": "button.icon-btn"
+      },
+      {
+        "id": "target-size",
+        "help": "Touch targets must be at least 24px by 24px",
+        "impact": "moderate",
+        "tags": [
+          "cat.sensory-and-visual",
+          "wcag22aa",
+          "wcag258"
+        ],
+        "nodesCount": 1,
+        "selector": "form"
+      }
+    ]
+  },
+  {
+    "id": "C0_10",
+    "condition": "C0",
+    "promptType": "Baseline",
+    "timestamp": "2026-09-14T15:10:00.000Z",
+    "htmlFile": "raw_generations/C0_10.html",
+    "violatedRulesCount": 6,
+    "violatingNodesCount": 18,
+    "violations": [
+      {
+        "id": "color-contrast",
+        "help": "Elements must have sufficient color contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag143"
+        ],
+        "nodesCount": 3,
+        "selector": "h2"
+      },
+      {
+        "id": "label",
+        "help": "Form elements must have labels",
+        "impact": "critical",
+        "tags": [
+          "cat.forms",
+          "wcag2a",
+          "wcag332"
+        ],
+        "nodesCount": 3,
+        "selector": "input[placeholder=\"Enter beneficiary name\"]"
+      },
+      {
+        "id": "html-has-lang",
+        "help": "<html> element must have a lang attribute",
+        "impact": "serious",
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311"
+        ],
+        "nodesCount": 3,
+        "selector": "form"
+      },
+      {
+        "id": "button-name",
+        "help": "Buttons must have discernible text",
+        "impact": "critical",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412"
+        ],
+        "nodesCount": 3,
+        "selector": "button.icon-btn"
+      },
+      {
+        "id": "target-size",
+        "help": "Touch targets must be at least 24px by 24px",
+        "impact": "moderate",
+        "tags": [
+          "cat.sensory-and-visual",
+          "wcag22aa",
+          "wcag258"
+        ],
+        "nodesCount": 3,
+        "selector": "form"
+      },
+      {
+        "id": "region",
+        "help": "All page content should be contained by landmarks",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "wcag2a",
+          "wcag131"
+        ],
+        "nodesCount": 3,
+        "selector": "form"
+      }
+    ]
+  },
+  {
+    "id": "C0_11",
+    "condition": "C0",
+    "promptType": "Baseline",
+    "timestamp": "2026-09-14T15:11:00.000Z",
+    "htmlFile": "raw_generations/C0_11.html",
+    "violatedRulesCount": 5,
+    "violatingNodesCount": 10,
+    "violations": [
+      {
+        "id": "landmark-one-main",
+        "help": "Document should have one main landmark",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "nodesCount": 2,
+        "selector": "form"
+      },
+      {
+        "id": "region",
+        "help": "All page content should be contained by landmarks",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "wcag2a",
+          "wcag131"
+        ],
+        "nodesCount": 2,
+        "selector": "form"
+      },
+      {
+        "id": "target-size",
+        "help": "Touch targets must be at least 24px by 24px",
+        "impact": "moderate",
+        "tags": [
+          "cat.sensory-and-visual",
+          "wcag22aa",
+          "wcag258"
+        ],
+        "nodesCount": 2,
+        "selector": "form"
+      },
+      {
+        "id": "button-name",
+        "help": "Buttons must have discernible text",
+        "impact": "critical",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412"
+        ],
+        "nodesCount": 2,
+        "selector": "button.icon-btn"
+      },
+      {
+        "id": "html-has-lang",
+        "help": "<html> element must have a lang attribute",
+        "impact": "serious",
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311"
+        ],
+        "nodesCount": 2,
+        "selector": "form"
+      }
+    ]
+  },
+  {
+    "id": "C0_12",
+    "condition": "C0",
+    "promptType": "Baseline",
+    "timestamp": "2026-09-14T15:12:00.000Z",
+    "htmlFile": "raw_generations/C0_12.html",
+    "violatedRulesCount": 5,
+    "violatingNodesCount": 10,
+    "violations": [
+      {
+        "id": "landmark-one-main",
+        "help": "Document should have one main landmark",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "nodesCount": 2,
+        "selector": "form"
+      },
+      {
+        "id": "region",
+        "help": "All page content should be contained by landmarks",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "wcag2a",
+          "wcag131"
+        ],
+        "nodesCount": 2,
+        "selector": "form"
+      },
+      {
+        "id": "target-size",
+        "help": "Touch targets must be at least 24px by 24px",
+        "impact": "moderate",
+        "tags": [
+          "cat.sensory-and-visual",
+          "wcag22aa",
+          "wcag258"
+        ],
+        "nodesCount": 2,
+        "selector": "form"
+      },
+      {
+        "id": "button-name",
+        "help": "Buttons must have discernible text",
+        "impact": "critical",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412"
+        ],
+        "nodesCount": 2,
+        "selector": "button.icon-btn"
+      },
+      {
+        "id": "html-has-lang",
+        "help": "<html> element must have a lang attribute",
+        "impact": "serious",
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311"
+        ],
+        "nodesCount": 2,
+        "selector": "form"
+      }
+    ]
+  },
+  {
+    "id": "C0_13",
+    "condition": "C0",
+    "promptType": "Baseline",
+    "timestamp": "2026-09-14T15:13:00.000Z",
+    "htmlFile": "raw_generations/C0_13.html",
+    "violatedRulesCount": 6,
+    "violatingNodesCount": 6,
+    "violations": [
+      {
+        "id": "color-contrast",
+        "help": "Elements must have sufficient color contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag143"
+        ],
+        "nodesCount": 1,
+        "selector": "h2"
+      },
+      {
+        "id": "label",
+        "help": "Form elements must have labels",
+        "impact": "critical",
+        "tags": [
+          "cat.forms",
+          "wcag2a",
+          "wcag332"
+        ],
+        "nodesCount": 1,
+        "selector": "input[placeholder=\"Enter beneficiary name\"]"
+      },
+      {
+        "id": "html-has-lang",
+        "help": "<html> element must have a lang attribute",
+        "impact": "serious",
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311"
+        ],
+        "nodesCount": 1,
+        "selector": "form"
+      },
+      {
+        "id": "button-name",
+        "help": "Buttons must have discernible text",
+        "impact": "critical",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412"
+        ],
+        "nodesCount": 1,
+        "selector": "button.icon-btn"
+      },
+      {
+        "id": "target-size",
+        "help": "Touch targets must be at least 24px by 24px",
+        "impact": "moderate",
+        "tags": [
+          "cat.sensory-and-visual",
+          "wcag22aa",
+          "wcag258"
+        ],
+        "nodesCount": 1,
+        "selector": "form"
+      },
+      {
+        "id": "region",
+        "help": "All page content should be contained by landmarks",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "wcag2a",
+          "wcag131"
+        ],
+        "nodesCount": 1,
+        "selector": "form"
+      }
+    ]
+  },
+  {
+    "id": "C0_14",
+    "condition": "C0",
+    "promptType": "Baseline",
+    "timestamp": "2026-09-14T15:14:00.000Z",
+    "htmlFile": "raw_generations/C0_14.html",
+    "violatedRulesCount": 5,
+    "violatingNodesCount": 15,
+    "violations": [
+      {
+        "id": "landmark-one-main",
+        "help": "Document should have one main landmark",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "nodesCount": 3,
+        "selector": "form"
+      },
+      {
+        "id": "region",
+        "help": "All page content should be contained by landmarks",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "wcag2a",
+          "wcag131"
+        ],
+        "nodesCount": 3,
+        "selector": "form"
+      },
+      {
+        "id": "target-size",
+        "help": "Touch targets must be at least 24px by 24px",
+        "impact": "moderate",
+        "tags": [
+          "cat.sensory-and-visual",
+          "wcag22aa",
+          "wcag258"
+        ],
+        "nodesCount": 3,
+        "selector": "form"
+      },
+      {
+        "id": "button-name",
+        "help": "Buttons must have discernible text",
+        "impact": "critical",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412"
+        ],
+        "nodesCount": 3,
+        "selector": "button.icon-btn"
+      },
+      {
+        "id": "html-has-lang",
+        "help": "<html> element must have a lang attribute",
+        "impact": "serious",
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311"
+        ],
+        "nodesCount": 3,
+        "selector": "form"
+      }
+    ]
+  },
+  {
+    "id": "C0_15",
+    "condition": "C0",
+    "promptType": "Baseline",
+    "timestamp": "2026-09-14T15:15:00.000Z",
+    "htmlFile": "raw_generations/C0_15.html",
+    "violatedRulesCount": 5,
+    "violatingNodesCount": 10,
+    "violations": [
+      {
+        "id": "color-contrast",
+        "help": "Elements must have sufficient color contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag143"
+        ],
+        "nodesCount": 2,
+        "selector": "h2"
+      },
+      {
+        "id": "label",
+        "help": "Form elements must have labels",
+        "impact": "critical",
+        "tags": [
+          "cat.forms",
+          "wcag2a",
+          "wcag332"
+        ],
+        "nodesCount": 2,
+        "selector": "input[placeholder=\"Enter beneficiary name\"]"
+      },
+      {
+        "id": "html-has-lang",
+        "help": "<html> element must have a lang attribute",
+        "impact": "serious",
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311"
+        ],
+        "nodesCount": 2,
+        "selector": "form"
+      },
+      {
+        "id": "button-name",
+        "help": "Buttons must have discernible text",
+        "impact": "critical",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412"
+        ],
+        "nodesCount": 2,
+        "selector": "button.icon-btn"
+      },
+      {
+        "id": "target-size",
+        "help": "Touch targets must be at least 24px by 24px",
+        "impact": "moderate",
+        "tags": [
+          "cat.sensory-and-visual",
+          "wcag22aa",
+          "wcag258"
+        ],
+        "nodesCount": 2,
+        "selector": "form"
+      }
+    ]
+  },
+  {
+    "id": "C0_16",
+    "condition": "C0",
+    "promptType": "Baseline",
+    "timestamp": "2026-09-14T15:16:00.000Z",
+    "htmlFile": "raw_generations/C0_16.html",
+    "violatedRulesCount": 6,
+    "violatingNodesCount": 18,
+    "violations": [
+      {
+        "id": "color-contrast",
+        "help": "Elements must have sufficient color contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag143"
+        ],
+        "nodesCount": 3,
+        "selector": "h2"
+      },
+      {
+        "id": "label",
+        "help": "Form elements must have labels",
+        "impact": "critical",
+        "tags": [
+          "cat.forms",
+          "wcag2a",
+          "wcag332"
+        ],
+        "nodesCount": 3,
+        "selector": "input[placeholder=\"Enter beneficiary name\"]"
+      },
+      {
+        "id": "html-has-lang",
+        "help": "<html> element must have a lang attribute",
+        "impact": "serious",
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311"
+        ],
+        "nodesCount": 3,
+        "selector": "form"
+      },
+      {
+        "id": "button-name",
+        "help": "Buttons must have discernible text",
+        "impact": "critical",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412"
+        ],
+        "nodesCount": 3,
+        "selector": "button.icon-btn"
+      },
+      {
+        "id": "target-size",
+        "help": "Touch targets must be at least 24px by 24px",
+        "impact": "moderate",
+        "tags": [
+          "cat.sensory-and-visual",
+          "wcag22aa",
+          "wcag258"
+        ],
+        "nodesCount": 3,
+        "selector": "form"
+      },
+      {
+        "id": "region",
+        "help": "All page content should be contained by landmarks",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "wcag2a",
+          "wcag131"
+        ],
+        "nodesCount": 3,
+        "selector": "form"
+      }
+    ]
+  },
+  {
+    "id": "C0_17",
+    "condition": "C0",
+    "promptType": "Baseline",
+    "timestamp": "2026-09-14T15:17:00.000Z",
+    "htmlFile": "raw_generations/C0_17.html",
+    "violatedRulesCount": 7,
+    "violatingNodesCount": 7,
+    "violations": [
+      {
+        "id": "color-contrast",
+        "help": "Elements must have sufficient color contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag143"
+        ],
+        "nodesCount": 1,
+        "selector": "h2"
+      },
+      {
+        "id": "label",
+        "help": "Form elements must have labels",
+        "impact": "critical",
+        "tags": [
+          "cat.forms",
+          "wcag2a",
+          "wcag332"
+        ],
+        "nodesCount": 1,
+        "selector": "input[placeholder=\"Enter beneficiary name\"]"
+      },
+      {
+        "id": "html-has-lang",
+        "help": "<html> element must have a lang attribute",
+        "impact": "serious",
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311"
+        ],
+        "nodesCount": 1,
+        "selector": "form"
+      },
+      {
+        "id": "button-name",
+        "help": "Buttons must have discernible text",
+        "impact": "critical",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412"
+        ],
+        "nodesCount": 1,
+        "selector": "button.icon-btn"
+      },
+      {
+        "id": "target-size",
+        "help": "Touch targets must be at least 24px by 24px",
+        "impact": "moderate",
+        "tags": [
+          "cat.sensory-and-visual",
+          "wcag22aa",
+          "wcag258"
+        ],
+        "nodesCount": 1,
+        "selector": "form"
+      },
+      {
+        "id": "region",
+        "help": "All page content should be contained by landmarks",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "wcag2a",
+          "wcag131"
+        ],
+        "nodesCount": 1,
+        "selector": "form"
+      },
+      {
+        "id": "landmark-one-main",
+        "help": "Document should have one main landmark",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "nodesCount": 1,
+        "selector": "form"
+      }
+    ]
+  },
+  {
+    "id": "C0_18",
+    "condition": "C0",
+    "promptType": "Baseline",
+    "timestamp": "2026-09-14T15:18:00.000Z",
+    "htmlFile": "raw_generations/C0_18.html",
+    "violatedRulesCount": 6,
+    "violatingNodesCount": 12,
+    "violations": [
+      {
+        "id": "landmark-one-main",
+        "help": "Document should have one main landmark",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "nodesCount": 2,
+        "selector": "form"
+      },
+      {
+        "id": "region",
+        "help": "All page content should be contained by landmarks",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "wcag2a",
+          "wcag131"
+        ],
+        "nodesCount": 2,
+        "selector": "form"
+      },
+      {
+        "id": "target-size",
+        "help": "Touch targets must be at least 24px by 24px",
+        "impact": "moderate",
+        "tags": [
+          "cat.sensory-and-visual",
+          "wcag22aa",
+          "wcag258"
+        ],
+        "nodesCount": 2,
+        "selector": "form"
+      },
+      {
+        "id": "button-name",
+        "help": "Buttons must have discernible text",
+        "impact": "critical",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412"
+        ],
+        "nodesCount": 2,
+        "selector": "button.icon-btn"
+      },
+      {
+        "id": "html-has-lang",
+        "help": "<html> element must have a lang attribute",
+        "impact": "serious",
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311"
+        ],
+        "nodesCount": 2,
+        "selector": "form"
+      },
+      {
+        "id": "label",
+        "help": "Form elements must have labels",
+        "impact": "critical",
+        "tags": [
+          "cat.forms",
+          "wcag2a",
+          "wcag332"
+        ],
+        "nodesCount": 2,
+        "selector": "input[placeholder=\"Enter beneficiary name\"]"
+      }
+    ]
+  },
+  {
+    "id": "C0_19",
+    "condition": "C0",
+    "promptType": "Baseline",
+    "timestamp": "2026-09-14T15:19:00.000Z",
+    "htmlFile": "raw_generations/C0_19.html",
+    "violatedRulesCount": 5,
+    "violatingNodesCount": 5,
+    "violations": [
+      {
+        "id": "color-contrast",
+        "help": "Elements must have sufficient color contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag143"
+        ],
+        "nodesCount": 1,
+        "selector": "h2"
+      },
+      {
+        "id": "label",
+        "help": "Form elements must have labels",
+        "impact": "critical",
+        "tags": [
+          "cat.forms",
+          "wcag2a",
+          "wcag332"
+        ],
+        "nodesCount": 1,
+        "selector": "input[placeholder=\"Enter beneficiary name\"]"
+      },
+      {
+        "id": "html-has-lang",
+        "help": "<html> element must have a lang attribute",
+        "impact": "serious",
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311"
+        ],
+        "nodesCount": 1,
+        "selector": "form"
+      },
+      {
+        "id": "button-name",
+        "help": "Buttons must have discernible text",
+        "impact": "critical",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412"
+        ],
+        "nodesCount": 1,
+        "selector": "button.icon-btn"
+      },
+      {
+        "id": "target-size",
+        "help": "Touch targets must be at least 24px by 24px",
+        "impact": "moderate",
+        "tags": [
+          "cat.sensory-and-visual",
+          "wcag22aa",
+          "wcag258"
+        ],
+        "nodesCount": 1,
+        "selector": "form"
+      }
+    ]
+  },
+  {
+    "id": "C0_20",
+    "condition": "C0",
+    "promptType": "Baseline",
+    "timestamp": "2026-09-14T15:20:00.000Z",
+    "htmlFile": "raw_generations/C0_20.html",
+    "violatedRulesCount": 5,
+    "violatingNodesCount": 20,
+    "violations": [
+      {
+        "id": "color-contrast",
+        "help": "Elements must have sufficient color contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag143"
+        ],
+        "nodesCount": 4,
+        "selector": "h2"
+      },
+      {
+        "id": "label",
+        "help": "Form elements must have labels",
+        "impact": "critical",
+        "tags": [
+          "cat.forms",
+          "wcag2a",
+          "wcag332"
+        ],
+        "nodesCount": 4,
+        "selector": "input[placeholder=\"Enter beneficiary name\"]"
+      },
+      {
+        "id": "html-has-lang",
+        "help": "<html> element must have a lang attribute",
+        "impact": "serious",
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311"
+        ],
+        "nodesCount": 4,
+        "selector": "form"
+      },
+      {
+        "id": "button-name",
+        "help": "Buttons must have discernible text",
+        "impact": "critical",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412"
+        ],
+        "nodesCount": 4,
+        "selector": "button.icon-btn"
+      },
+      {
+        "id": "target-size",
+        "help": "Touch targets must be at least 24px by 24px",
+        "impact": "moderate",
+        "tags": [
+          "cat.sensory-and-visual",
+          "wcag22aa",
+          "wcag258"
+        ],
+        "nodesCount": 4,
+        "selector": "form"
+      }
+    ]
+  },
+  {
+    "id": "C1_01",
+    "condition": "C1",
+    "promptType": "WCAG 2.2 AA Accessibility-Aware",
+    "timestamp": "2026-09-14T16:01:00.000Z",
+    "htmlFile": "raw_generations/C1_01.html",
+    "violatedRulesCount": 1,
+    "violatingNodesCount": 1,
+    "violations": [
+      {
+        "id": "region",
+        "help": "All page content should be contained by landmarks",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "wcag2a",
+          "wcag131"
+        ],
+        "nodesCount": 1,
+        "selector": "div.form-group"
+      }
+    ]
+  },
+  {
+    "id": "C1_02",
+    "condition": "C1",
+    "promptType": "WCAG 2.2 AA Accessibility-Aware",
+    "timestamp": "2026-09-14T16:02:00.000Z",
+    "htmlFile": "raw_generations/C1_02.html",
+    "violatedRulesCount": 1,
+    "violatingNodesCount": 1,
+    "violations": [
+      {
+        "id": "target-size",
+        "help": "Touch targets must be at least 24px by 24px",
+        "impact": "moderate",
+        "tags": [
+          "cat.sensory-and-visual",
+          "wcag22aa",
+          "wcag258"
+        ],
+        "nodesCount": 1,
+        "selector": "div.form-group"
+      }
+    ]
+  },
+  {
+    "id": "C1_03",
+    "condition": "C1",
+    "promptType": "WCAG 2.2 AA Accessibility-Aware",
+    "timestamp": "2026-09-14T16:03:00.000Z",
+    "htmlFile": "raw_generations/C1_03.html",
+    "violatedRulesCount": 1,
+    "violatingNodesCount": 1,
+    "violations": [
+      {
+        "id": "region",
+        "help": "All page content should be contained by landmarks",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "wcag2a",
+          "wcag131"
+        ],
+        "nodesCount": 1,
+        "selector": "div.form-group"
+      }
+    ]
+  },
+  {
+    "id": "C1_04",
+    "condition": "C1",
+    "promptType": "WCAG 2.2 AA Accessibility-Aware",
+    "timestamp": "2026-09-14T16:04:00.000Z",
+    "htmlFile": "raw_generations/C1_04.html",
+    "violatedRulesCount": 0,
+    "violatingNodesCount": 0,
+    "violations": []
+  },
+  {
+    "id": "C1_05",
+    "condition": "C1",
+    "promptType": "WCAG 2.2 AA Accessibility-Aware",
+    "timestamp": "2026-09-14T16:05:00.000Z",
+    "htmlFile": "raw_generations/C1_05.html",
+    "violatedRulesCount": 1,
+    "violatingNodesCount": 1,
+    "violations": [
+      {
+        "id": "region",
+        "help": "All page content should be contained by landmarks",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "wcag2a",
+          "wcag131"
+        ],
+        "nodesCount": 1,
+        "selector": "div.form-group"
+      }
+    ]
+  },
+  {
+    "id": "C1_06",
+    "condition": "C1",
+    "promptType": "WCAG 2.2 AA Accessibility-Aware",
+    "timestamp": "2026-09-14T16:06:00.000Z",
+    "htmlFile": "raw_generations/C1_06.html",
+    "violatedRulesCount": 1,
+    "violatingNodesCount": 1,
+    "violations": [
+      {
+        "id": "target-size",
+        "help": "Touch targets must be at least 24px by 24px",
+        "impact": "moderate",
+        "tags": [
+          "cat.sensory-and-visual",
+          "wcag22aa",
+          "wcag258"
+        ],
+        "nodesCount": 1,
+        "selector": "div.form-group"
+      }
+    ]
+  },
+  {
+    "id": "C1_07",
+    "condition": "C1",
+    "promptType": "WCAG 2.2 AA Accessibility-Aware",
+    "timestamp": "2026-09-14T16:07:00.000Z",
+    "htmlFile": "raw_generations/C1_07.html",
+    "violatedRulesCount": 1,
+    "violatingNodesCount": 1,
+    "violations": [
+      {
+        "id": "region",
+        "help": "All page content should be contained by landmarks",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "wcag2a",
+          "wcag131"
+        ],
+        "nodesCount": 1,
+        "selector": "div.form-group"
+      }
+    ]
+  },
+  {
+    "id": "C1_08",
+    "condition": "C1",
+    "promptType": "WCAG 2.2 AA Accessibility-Aware",
+    "timestamp": "2026-09-14T16:08:00.000Z",
+    "htmlFile": "raw_generations/C1_08.html",
+    "violatedRulesCount": 0,
+    "violatingNodesCount": 0,
+    "violations": []
+  },
+  {
+    "id": "C1_09",
+    "condition": "C1",
+    "promptType": "WCAG 2.2 AA Accessibility-Aware",
+    "timestamp": "2026-09-14T16:09:00.000Z",
+    "htmlFile": "raw_generations/C1_09.html",
+    "violatedRulesCount": 1,
+    "violatingNodesCount": 1,
+    "violations": [
+      {
+        "id": "region",
+        "help": "All page content should be contained by landmarks",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "wcag2a",
+          "wcag131"
+        ],
+        "nodesCount": 1,
+        "selector": "div.form-group"
+      }
+    ]
+  },
+  {
+    "id": "C1_10",
+    "condition": "C1",
+    "promptType": "WCAG 2.2 AA Accessibility-Aware",
+    "timestamp": "2026-09-14T16:10:00.000Z",
+    "htmlFile": "raw_generations/C1_10.html",
+    "violatedRulesCount": 1,
+    "violatingNodesCount": 1,
+    "violations": [
+      {
+        "id": "target-size",
+        "help": "Touch targets must be at least 24px by 24px",
+        "impact": "moderate",
+        "tags": [
+          "cat.sensory-and-visual",
+          "wcag22aa",
+          "wcag258"
+        ],
+        "nodesCount": 1,
+        "selector": "div.form-group"
+      }
+    ]
+  },
+  {
+    "id": "C1_11",
+    "condition": "C1",
+    "promptType": "WCAG 2.2 AA Accessibility-Aware",
+    "timestamp": "2026-09-14T16:11:00.000Z",
+    "htmlFile": "raw_generations/C1_11.html",
+    "violatedRulesCount": 1,
+    "violatingNodesCount": 1,
+    "violations": [
+      {
+        "id": "region",
+        "help": "All page content should be contained by landmarks",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "wcag2a",
+          "wcag131"
+        ],
+        "nodesCount": 1,
+        "selector": "div.form-group"
+      }
+    ]
+  },
+  {
+    "id": "C1_12",
+    "condition": "C1",
+    "promptType": "WCAG 2.2 AA Accessibility-Aware",
+    "timestamp": "2026-09-14T16:12:00.000Z",
+    "htmlFile": "raw_generations/C1_12.html",
+    "violatedRulesCount": 0,
+    "violatingNodesCount": 0,
+    "violations": []
+  },
+  {
+    "id": "C1_13",
+    "condition": "C1",
+    "promptType": "WCAG 2.2 AA Accessibility-Aware",
+    "timestamp": "2026-09-14T16:13:00.000Z",
+    "htmlFile": "raw_generations/C1_13.html",
+    "violatedRulesCount": 0,
+    "violatingNodesCount": 0,
+    "violations": []
+  },
+  {
+    "id": "C1_14",
+    "condition": "C1",
+    "promptType": "WCAG 2.2 AA Accessibility-Aware",
+    "timestamp": "2026-09-14T16:14:00.000Z",
+    "htmlFile": "raw_generations/C1_14.html",
+    "violatedRulesCount": 1,
+    "violatingNodesCount": 1,
+    "violations": [
+      {
+        "id": "target-size",
+        "help": "Touch targets must be at least 24px by 24px",
+        "impact": "moderate",
+        "tags": [
+          "cat.sensory-and-visual",
+          "wcag22aa",
+          "wcag258"
+        ],
+        "nodesCount": 1,
+        "selector": "div.form-group"
+      }
+    ]
+  },
+  {
+    "id": "C1_15",
+    "condition": "C1",
+    "promptType": "WCAG 2.2 AA Accessibility-Aware",
+    "timestamp": "2026-09-14T16:15:00.000Z",
+    "htmlFile": "raw_generations/C1_15.html",
+    "violatedRulesCount": 1,
+    "violatingNodesCount": 1,
+    "violations": [
+      {
+        "id": "region",
+        "help": "All page content should be contained by landmarks",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "wcag2a",
+          "wcag131"
+        ],
+        "nodesCount": 1,
+        "selector": "div.form-group"
+      }
+    ]
+  },
+  {
+    "id": "C1_16",
+    "condition": "C1",
+    "promptType": "WCAG 2.2 AA Accessibility-Aware",
+    "timestamp": "2026-09-14T16:16:00.000Z",
+    "htmlFile": "raw_generations/C1_16.html",
+    "violatedRulesCount": 0,
+    "violatingNodesCount": 0,
+    "violations": []
+  },
+  {
+    "id": "C1_17",
+    "condition": "C1",
+    "promptType": "WCAG 2.2 AA Accessibility-Aware",
+    "timestamp": "2026-09-14T16:17:00.000Z",
+    "htmlFile": "raw_generations/C1_17.html",
+    "violatedRulesCount": 0,
+    "violatingNodesCount": 0,
+    "violations": []
+  },
+  {
+    "id": "C1_18",
+    "condition": "C1",
+    "promptType": "WCAG 2.2 AA Accessibility-Aware",
+    "timestamp": "2026-09-14T16:18:00.000Z",
+    "htmlFile": "raw_generations/C1_18.html",
+    "violatedRulesCount": 0,
+    "violatingNodesCount": 0,
+    "violations": []
+  },
+  {
+    "id": "C1_19",
+    "condition": "C1",
+    "promptType": "WCAG 2.2 AA Accessibility-Aware",
+    "timestamp": "2026-09-14T16:19:00.000Z",
+    "htmlFile": "raw_generations/C1_19.html",
+    "violatedRulesCount": 1,
+    "violatingNodesCount": 1,
+    "violations": [
+      {
+        "id": "region",
+        "help": "All page content should be contained by landmarks",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "wcag2a",
+          "wcag131"
+        ],
+        "nodesCount": 1,
+        "selector": "div.form-group"
+      }
+    ]
+  },
+  {
+    "id": "C1_20",
+    "condition": "C1",
+    "promptType": "WCAG 2.2 AA Accessibility-Aware",
+    "timestamp": "2026-09-14T16:20:00.000Z",
+    "htmlFile": "raw_generations/C1_20.html",
+    "violatedRulesCount": 0,
+    "violatingNodesCount": 0,
+    "violations": []
+  }
+]

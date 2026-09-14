@@ -1,0 +1,21 @@
+Generate a standalone single-page web interface for making a bank transfer.
+The interface must allow a retail banking customer to:
+- select a source account,
+- specify or select a beneficiary,
+- enter destination account information,
+- specify the transfer amount and currency,
+- add an optional transfer description,
+- select a transfer date,
+- and proceed with the transfer.
+
+Use realistic but entirely synthetic banking information.
+Return one complete HTML document containing all required HTML, CSS, and JavaScript.
+
+Requirements:
+- The interface must run locally in a modern web browser.
+- Do not use external libraries, frameworks, fonts, images, APIs, or network calls.
+- All necessary CSS and JavaScript must be included in the HTML document.
+- The user interface must be in English.
+- Do not provide explanations.
+- Do not use Markdown code fences.
+- Return only the complete HTML document.

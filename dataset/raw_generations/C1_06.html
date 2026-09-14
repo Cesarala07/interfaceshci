@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Secure Bank Transfer - C1 C1_06</title>
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --primary-hover: #1e40af;
+      --text: #0f172a;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --border: #64748b;
+      --focus-ring: #2563eb;
+    }
+    body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 2rem; line-height: 1.5; }
+    main { max-width: 32rem; margin: 0 auto; background: var(--card-bg); padding: 2rem; border-radius: 0.75rem; border: 1px solid #cbd5e1; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+    h1 { color: var(--primary); font-size: 1.5rem; margin-top: 0; margin-bottom: 1.5rem; font-weight: 700; }
+    .form-group { margin-bottom: 1.25rem; display: flex; flex-direction: column; gap: 0.5rem; }
+    label { font-weight: 600; color: #1e293b; font-size: 0.95rem; }
+    input, select { width: 100%; padding: 0.75rem; border: 1.5px solid var(--border); border-radius: 0.375rem; font-size: 1rem; color: var(--text); min-height: 44px; box-sizing: border-box; }
+    input:focus-visible, select:focus-visible, button:focus-visible { outline: 3px solid var(--focus-ring); outline-offset: 2px; }
+    .amount-group { display: flex; gap: 0.75rem; }
+    .btn-primary { background: var(--primary); color: #ffffff; font-weight: 700; border: none; padding: 0.875rem 1.5rem; min-height: 48px; border-radius: 0.375rem; cursor: pointer; font-size: 1rem; width: 100%; transition: background 0.2s; }
+    .btn-primary:hover { background: var(--primary-hover); }
+    .help-text { font-size: 0.875rem; color: #475569; margin-top: 0.25rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Secure Money Transfer</h1>
+    </header>
+    <form aria-labelledby="form-heading">
+      <div class="form-group">
+        <label for="src_acc_C1_06">Source Account</label>
+        <select id="src_acc_C1_06" name="sourceAccount" required aria-describedby="src_help_C1_06">
+          <option value="chk">Premier Checking (*4829) - $12,450.00</option>
+          <option value="svg">High Yield Savings (*9102) - $5,300.00</option>
+        </select>
+        <span id="src_help_C1_06" class="help-text">Select the account to transfer funds from.</span>
+      </div>
+
+      <div class="form-group">
+        <label for="ben_name_C1_06">Beneficiary Name</label>
+        <input type="text" id="ben_name_C1_06" name="beneficiaryName" required placeholder="e.g. Jane Doe" autocomplete="name" />
+      </div>
+
+      <div class="form-group">
+        <label for="dest_iban_C1_06">Destination Account / IBAN</label>
+        <input type="text" id="dest_iban_C1_06" name="destinationAccount" required placeholder="US12 3456 7890 1234" autocomplete="off" />
+      </div>
+
+      <div class="form-group">
+        <label for="amount_C1_06">Transfer Amount</label>
+        <div class="amount-group">
+          <input type="number" id="amount_C1_06" name="amount" step="0.01" min="1" required placeholder="0.00" style="flex:2;" />
+          <label for="currency_C1_06" class="sr-only" style="position:absolute; width:1px; height:1px; overflow:hidden;">Currency</label>
+          <select id="currency_C1_06" name="currency" aria-label="Currency" style="flex:1;">
+            <option value="USD">USD ($)</option>
+            <option value="EUR">EUR (€)</option>
+            <option value="GBP">GBP (£)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="date_C1_06">Execution Date</label>
+        <input type="date" id="date_C1_06" name="transferDate" required />
+      </div>
+
+      <div class="form-group">
+        <label for="desc_C1_06">Payment Reference / Description (Optional)</label>
+        <input type="text" id="desc_C1_06" name="description" placeholder="e.g., Monthly Rent" />
+      </div>
+
+      <div style="margin-top: 1.5rem;">
+        <button type="submit" class="btn-primary">Review & Confirm Transfer</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

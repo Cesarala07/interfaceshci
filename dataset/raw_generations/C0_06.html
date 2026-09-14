@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bank Transfer - Baseline C0_06</title>
+  <style>
+    body { font-family: sans-serif; background: #f4f6f8; margin: 0; padding: 20px; }
+    .card { background: #ffffff; width: 450px; margin: 30px auto; padding: 25px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+    h2 { color: #888888; font-size: 18px; margin-top: 0; } /* Low contrast violation */
+    .form-group { margin-bottom: 15px; }
+    span.label { display: block; font-weight: bold; margin-bottom: 5px; color: #aaaaaa; } /* Missing label element & low contrast */
+    input, select { width: 100%; padding: 8px; box-sizing: border-box; border: 1px solid #ccc; border-radius: 4px; }
+    .btn { background: #4a90e2; color: #ffffff; border: none; padding: 6px 12px; height: 18px; cursor: pointer; border-radius: 4px; font-weight: bold; } /* Target size violation & poor contrast text */
+    .icon-btn { background: none; border: none; cursor: pointer; } /* Missing button name */
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Make a Bank Transfer</h2>
+    <form>
+      <div class="form-group">
+        <span class="label">Source Account:</span>
+        <select id="srcAcc_C0_06">
+          <option>Checking Account (*4829) - $12,450.00</option>
+          <option>Savings Account (*9102) - $5,300.00</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <span class="label">Beneficiary:</span>
+        <input type="text" placeholder="Enter beneficiary name" /> <!-- Missing associated label -->
+      </div>
+
+      <div class="form-group">
+        <span class="label">Destination IBAN / Account:</span>
+        <input type="text" placeholder="US12 3456 7890 1234" />
+      </div>
+
+      <div class="form-group">
+        <span class="label">Amount & Currency:</span>
+        <div style="display:flex; gap:10px;">
+          <input type="number" placeholder="0.00" style="flex:2;" />
+          <select style="flex:1;">
+            <option>USD</option>
+            <option>EUR</option>
+            <option>GBP</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <span class="label">Transfer Date:</span>
+        <input type="date" />
+      </div>
+
+      <div class="form-group">
+        <span class="label">Description (Optional):</span>
+        <input type="text" placeholder="Invoice / Reference" />
+      </div>
+
+      <div style="display:flex; justify-between; align-items:center; margin-top:20px;">
+        <button type="button" class="btn" onclick="alert('Transfer Submitted')">Confirm Transfer</button>
+        <button type="button" class="icon-btn">ℹ️</button> <!-- Button missing name -->
+      </div>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+Generate a standalone single-page web interface for making a bank transfer.
+The interface must allow a retail banking customer to:
+- select a source account,
+- specify or select a beneficiary,
+- enter destination account information,
+- specify the transfer amount and currency,
+- add an optional transfer description,
+- select a transfer date,
+- and proceed with the transfer.
+
+Use realistic but entirely synthetic banking information.
+Return one complete HTML document containing all required HTML, CSS, and JavaScript.
+
+Accessibility Requirements (Strict WCAG 2.2 Level AA Compliance):
+1. Semantic HTML & ARIA: Use appropriate landmark roles (`<main>`, `<header>`, `<form>`), proper fieldsets/legends for grouped controls, and explicit `<label>` elements linked via `for`/`id` to every form input.
+2. Color & Contrast: Ensure text and interactive elements satisfy WCAG 2.2 AA contrast ratios (minimum 4.5:1 for normal text, 3:1 for large text and UI components). Do not rely on color alone to convey meaning or error states.
+3. Keyboard & Focus Management: All interactive components (buttons, links, form inputs) must be fully operable using only the keyboard. Provide clear, high-contrast visual focus indicators (`:focus-visible`).
+4. Touch Target & Spacing: Ensure interactive controls meet WCAG 2.2 Success Criterion 2.5.8 Target Size (Minimum, 24x24 CSS pixels with sufficient spacing).
+5. Error Identification & Announcements: Provide visible, descriptive error messages associated with invalid inputs using `aria-describedby` and `aria-invalid`. Use `aria-live="polite"` regions for dynamic updates.
+6. Screen Reader Support: Ensure the page language (`lang="en"`) is declared on `<html>`, headings follow a strict hierarchy (`<h1>`, `<h2>`), and decorative elements use `aria-hidden="true"`.
+
+General Requirements:
+- The interface must run locally in a modern web browser.
+- Do not use external libraries, frameworks, fonts, images, APIs, or network calls.
+- All necessary CSS and JavaScript must be included in the HTML document.
+- The user interface must be in English.
+- Do not provide explanations.
+- Do not use Markdown code fences.
+- Return only the complete HTML document.
